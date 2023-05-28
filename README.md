@@ -13,3 +13,10 @@ and not sourced online. I experimented with BlueWillow AI to see
 how well it could generate images of these dishes, since I didn't
 have my own photos. It's definitely far from perfect. Some of the
 images it generated were even hilarious. Others, creepy.
+
+Reflections after adding CSS stylings.
+After an initial week of feeling fairly lost some of these concepts
+are making sense, and I'm motivated to move on. Flexbox is very 
+cool and I'll be using it a lot. As I progress though the course
+I plan to circle back to this project and see what mistakes I've
+made, of which I don't realize, could have been avoided.
