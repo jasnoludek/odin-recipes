@@ -3,6 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Avenir", sans-serif;
+    background-color: rgb(205, 253, 250);
     min-height: 100vh;
 }
 
@@ -80,7 +81,6 @@ button:hover {
 }
 
 .menu-container {
-    background-color: rgb(205, 253, 250);
     padding: 32px;
     display: flex;
     justify-content: center;
@@ -129,10 +129,6 @@ h1 {
     font-size: 48px;
 }
 
-p {
-    font-size: 24px;
-}
-
 .recipe-image {
     margin-right: 24px;
 }
@@ -164,6 +160,65 @@ p {
     padding: 12px;
     flex-wrap: wrap;
     height: auto;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: white;
+    max-width: 56rem;
+    margin: 4rem 0;
+    padding: 2rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    border: 2px solid black;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.form-left, .form-right {
+    flex: 1;
+}
+
+.form-left {
+    padding-right: 2rem;
+}
+
+.form-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+.form-right input[type=email] {
+    height: 2rem;
+    border-radius: 0.25rem;
+    max-width: 24rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form-right input[type=submit] {
+    max-width: 7.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: rgba(252, 154, 74, 0.937);
+    border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 footer {
