@@ -50,8 +50,8 @@
           </div>
         </div>
       </div>
-
-      <form>
+      <div id="error"></div>
+      <form id="form">
         <article class="form-container">
           <div class="form-left">
             <h2>Delicious Recipes Delivered Weekly!</h2>
@@ -73,5 +73,27 @@
       <footer>
         <p>Odin Project - 2023</p>
       </footer>  
+
+      <script>
+
+        const email = document.getElementById("email")
+        const form = document.getElementById("form")
+        const errorElement = document.getElementById("error")
+      
+        form.addEventListener("submit", (e) => {
+          let messages = []
+          if (email.value === "" || email.value == null) {
+            messages.push("Email address is required")
+          }
+      
+          if (messages.length > 0) {
+            e.preventDefault()
+            errorElement.innerText = messages.join(", ")
+          }
+        })
+      
+      </script>
+
     </body>
 </html>
+
